@@ -23,7 +23,7 @@ void loop() {
   dustDensity = (Voltage - 0.5)/0.005;
 
   Serial.print("dust: ");
-  Serial.println("dustDensity");
+  Serial.println(dustDensity);
   // Serial.print("Voltage: ");
   // Serial.println(Voltage);
   // Serial.print("Dust Density: ");
