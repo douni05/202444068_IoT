@@ -1,9 +1,11 @@
+// 아두이노 1602 LCD I2C 주소 찾기
+
 #include <Wire.h>  // I2C 통신을 위한 기본 라이브러리
 
 void setup()
 {
-  Serial.begin(9600);
-  Wire.begin();
+  Serial.begin(9600); // 시리얼 모니터 시작 (속도: 9600 baud)
+  Wire.begin();       // I2C 통신 시작
   Serial.println("I2C Scanner Running...");  // 시작 메시지 출력
 }
 
