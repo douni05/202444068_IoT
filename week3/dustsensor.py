@@ -1,3 +1,5 @@
+# === InfluxDB 2.x 및 Arduino 시리얼 데이터 로깅 ===
+
 from influxdb_client import InfluxDBClient
 import time
 import serial
