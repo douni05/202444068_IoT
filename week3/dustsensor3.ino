@@ -1,3 +1,6 @@
+// 먼지 센서를 이용한 먼지 농도 측정 (Arduino)
+// 센서에서 읽은 값을 전압으로 변환하고, 먼지 농도로 계산하여 시리얼 모니터에 출력
+
 int Vo = A0;
 int V_LED = 2;
 
@@ -19,9 +22,10 @@ void loop() {
   digitalWrite(V_LED, HIGH);
   delayMicroseconds(9680);
 
-  Voltage = Vo_value*5.0 / 1023.0;
-  dustDensity = (Voltage - 0.5)/0.005;
+  Voltage = Vo_value*5.0 / 1023.0; // 아날로그 값을 전압으로 변환 (5V 기준)
+  dustDensity = (Voltage - 0.5)/0.005; // 먼지 농도 계산
 
+  // 시리얼 모니터에 먼지 농도 출력
   Serial.print("dust: ");
   Serial.println(dustDensity);
   // Serial.print("Voltage: ");
