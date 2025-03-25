@@ -1,5 +1,6 @@
 // LED 깜박이는 코드 (Arduino)
 // 7번 핀(빨간 LED)과 9번 핀(초록 LED)을 1초 간격으로 번갈아가며 깜박이게 함
+
 int led_r = 7; // 빨간색 LED (Red LED) - 7번 핀
 int led_g = 9; // 초록색 LED (Green LED) - 9번 핀
 
