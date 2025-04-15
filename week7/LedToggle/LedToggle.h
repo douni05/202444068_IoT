@@ -5,12 +5,14 @@
 
 class LedToggle {
 	public:
-		LedToggle(int pin); // »ý¼ºÀÚ
-		void toggle();		// LED »óÅÂ Åä±Û
+		LedToggle(int pin); // 생성자
+		LedToggle(int pin, unsigned long delayTime);
+		void toggle();		// LED 상태 토글
 	
  	private:
  		int _pin;
  		bool _state;
+ 		unsigned long _delayTime;
 };
 
 #endif
