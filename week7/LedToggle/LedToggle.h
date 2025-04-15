@@ -5,10 +5,12 @@
 
 class LedToggle {
 	public:
-		LedToggle(int pin); // »ý¼ºÀÚ
-		void toggle();		// LED »óÅÂ Åä±Û
+		LedToggle(int pin); // Â»Ã½Â¼ÂºÃ€Ãš
+		void toggle();		// LED Â»Ã³Ã…Ã‚ Ã…Ã¤Â±Ã›
 	
  	private:
  		int _pin;
  		bool _state;
 };
+
+#endif
