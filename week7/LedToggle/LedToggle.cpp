@@ -3,7 +3,7 @@
 LedToggle::LedToggle(int pin) {
 	_pin = pin;
 	_state = false;
-	pinmode(_pin, OUTPUT);
+	pinMode(_pin, OUTPUT);
 	digitalWrite(_pin, LOW);
 }
 
