@@ -1,4 +1,4 @@
-**raspberrypi**
+**raspberrypi**  
 ssd로 이미지 굽기  
   
 sudo apt install vim -y : vim 패키지 다운로드  
